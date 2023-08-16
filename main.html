@@ -12,14 +12,19 @@
 	</script>
 	<form action="#" method="post">
 		<lable for="name">Name:</lable>
-		<input type="text" placeholder="Name" id="name"><br>
+		<input type="text" placeholder="Name" id="name" required><br>
+		
 		<lable for="email">Email:</lable>
-		<input type="email" placeholder="Email" id="email"><br>
-		Gender:
-		<lable for="gender_m">Male</lable><input type="radio" name="gender" id="gender_m">
-		<lable for="gender_f"></lable>Female<input type="radio" name="gender" id="gender_f"><br>
+		<input type="email" placeholder="Email" id="email" required><br>
+		
+		<label>Gender:</label>
+        <input type="radio" id="gender_m" name="gender" value="Male" required>
+        <label for="gender_m">Male</label>
+        <input type="radio" id="gender_f" name="gender" value="Female" required>
+        <label for="gender_f">Female</label><br>
+		
 		<lable for="cars">Car Brands</lable>	
-			<select >
+			<select id="cars" required>
 				<option value="">--Please choose an option--</option>
 				<option value="Mercedes">Mercedes</option>
 				<option value="Audi">Audi</option>
@@ -29,7 +34,7 @@
 			<lable for="age">Age:</lable>
 			<input type="number" placeholder="Age" id="age" required><br>
 			<lable for="dob">DOB:</lable>
-			<input type="date" required><br>
+			<input type="date" id="dob" required><br>
 			<lable for="tel">Phone Number:</lable>
 			<input type="tel" placeholder="xxx-xxx-xxxx" id="tel" maxlength="10"><br>
 			<lable for="password">Password:</lable>
